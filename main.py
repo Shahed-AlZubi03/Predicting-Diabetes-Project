@@ -92,7 +92,7 @@ def preprocess(df, scaler=None, fit_scaler=False):
     else:
         df[numeric_cols] = scaler.transform(df[numeric_cols])
     
-    return df, scaler
+    return df
 
 # 3) Align features to training columns
 def align_features(df, trained_columns):
