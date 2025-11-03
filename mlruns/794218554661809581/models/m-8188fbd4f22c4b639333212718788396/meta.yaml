@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Shahe/OneDrive/Desktop/ml_project/mlruns/794218554661809581/models/m-8188fbd4f22c4b639333212718788396/artifacts
+creation_timestamp: 1762106769635
+experiment_id: '794218554661809581'
+last_updated_timestamp: 1762106781971
+model_id: m-8188fbd4f22c4b639333212718788396
+model_type: null
+name: model
+source_run_id: 7ca47f855ec34c45a4774f625c4f5e35
+status: 2
+status_message: null
