@@ -8,9 +8,9 @@ from sklearn.impute import SimpleImputer
 from pydantic import BaseModel, Field
 api = FastAPI()
 
-MODEL_PATH = r"C:\Users\Shahe\OneDrive\Desktop\ml_project\models\rf_diabetes_model.pkl"
-SCALER_PATH = r"C:\Users\Shahe\OneDrive\Desktop\ml_project\models\scaler.pkl"
-FEATURES_PATH = r"C:\Users\Shahe\OneDrive\Desktop\ml_project\models\trained_features.pkl"
+MODEL_PATH = "models/rf_diabetes_model.pkl"
+SCALER_PATH = "models/scaler.pkl"
+FEATURES_PATH = "models/trained_features.pkl"
 THRESHOLD = 0.55
 
 app = FastAPI(title="Diabetes Prediction API") #, version="1.0")
@@ -94,7 +94,6 @@ def preprocess(df, scaler=None, fit_scaler=False):
     
     return df
 
-# 3) Align features to training columns
 def align_features(df, trained_columns):
     for col in trained_columns:
         if col not in df.columns:
